@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_331022e7f53a68fa3927d5eb28afd04c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+     <h3 style="position: fixed; 
+     top: 10px; right: 80px; width: 300px; height: 150px; 
+     z-index: 9999; font-size: 60px; color: #410C0C; font-family: Trebuchet MS, sans-serif; font-weight: bold;
+     text-align: center;">
+     Merry Christmas in <br>European <br>Languages
+     </h3>
+     
+    
+     <div style="position: fixed; 
+     bottom: 50px; left: 50px; width: 200px; height: 220px; 
+     border: 2px solid grey; z-index: 9999; font-size: 15px; font-family: Trebuchet MS, sans-serif; font-weight: bold;
+     background-color: white; padding: 10px; text-align: left;
+     ">
+     <h4 style="font-size: 16px; color: #410C0C; margin-bottom: 8px; color: #410C0C; font-family: Trebuchet MS, sans-serif; font-weight: bold;">
+     Is the name of Christ a reference in the greeting?</h4>
+     <p style="color: green; margin: 5px 0;">&#9632;&nbsp;&nbsp;Reference to the name of Christ (15)</p>
+     <p style="color: red; margin: 5px 0;">&#9632;&nbsp;&nbsp;Not a reference to the name of Christ (28)</p>
+     <p style="color: orange; margin: 5px 0;">&#9632;&nbsp;&nbsp;Both used (4)</p>
+     </div>
+     
+    
+            <div class="folium-map" id="map_331022e7f53a68fa3927d5eb28afd04c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_331022e7f53a68fa3927d5eb28afd04c = L.map(
+                "map_331022e7f53a68fa3927d5eb28afd04c",
+                {
+                    center: [52.5, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf8d0e8f7e8b28f1052d72d105491919 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf8d0e8f7e8b28f1052d72d105491919.addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var marker_98f4839289aca896071cb5d4b3c88b87 = L.marker(
+                [41.153332, 20.168331],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_26017aafb8d1f459c4364b35d5dd0a83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98f4839289aca896071cb5d4b3c88b87.setIcon(icon_26017aafb8d1f459c4364b35d5dd0a83);
+        
+    
+            marker_98f4839289aca896071cb5d4b3c88b87.bindTooltip(
+                `<div>
+                     Albania: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98ad96745b6647eb5c005bde5b803913 = L.marker(
+                [42.546245, 1.601554],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_4d1897a05ddd9774839f8eb35b103eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98ad96745b6647eb5c005bde5b803913.setIcon(icon_4d1897a05ddd9774839f8eb35b103eea);
+        
+    
+            marker_98ad96745b6647eb5c005bde5b803913.bindTooltip(
+                `<div>
+                     Andorra: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_879da81c23af639e1d375c519b845577 = L.marker(
+                [47.516231, 14.550072],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_e21b7c5602df50947408d5a302cce89c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_879da81c23af639e1d375c519b845577.setIcon(icon_e21b7c5602df50947408d5a302cce89c);
+        
+    
+            marker_879da81c23af639e1d375c519b845577.bindTooltip(
+                `<div>
+                     Austria: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c2c8a1341f520ca1481c1a8e5cf53ff = L.marker(
+                [53.709807, 27.953389],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_67eb4dfe9fccf5915ecceef863e9d63b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c2c8a1341f520ca1481c1a8e5cf53ff.setIcon(icon_67eb4dfe9fccf5915ecceef863e9d63b);
+        
+    
+            marker_7c2c8a1341f520ca1481c1a8e5cf53ff.bindTooltip(
+                `<div>
+                     Belarus: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9ab77740ba9db3e0d75904fdd683561 = L.marker(
+                [50.503887, 4.469936],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_711fec8b8985fb80fe30fc132312c5b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e9ab77740ba9db3e0d75904fdd683561.setIcon(icon_711fec8b8985fb80fe30fc132312c5b2);
+        
+    
+            marker_e9ab77740ba9db3e0d75904fdd683561.bindTooltip(
+                `<div>
+                     Belgium: Both used
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09de27c804ce8f2fe675b84c394cb0b3 = L.marker(
+                [43.915886, 17.679076],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_01a92df5b3ad27a14abc1dfb411bb976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_09de27c804ce8f2fe675b84c394cb0b3.setIcon(icon_01a92df5b3ad27a14abc1dfb411bb976);
+        
+    
+            marker_09de27c804ce8f2fe675b84c394cb0b3.bindTooltip(
+                `<div>
+                     Bosnia and Herzegovina: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac4e3a6db7f992eec68b1ff9ac251c7a = L.marker(
+                [42.733883, 25.48583],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_6886b88543ff2e223c34a7d65ae8ae25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ac4e3a6db7f992eec68b1ff9ac251c7a.setIcon(icon_6886b88543ff2e223c34a7d65ae8ae25);
+        
+    
+            marker_ac4e3a6db7f992eec68b1ff9ac251c7a.bindTooltip(
+                `<div>
+                     Bulgaria: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a2e98372845af3a5fa1357aeb4a9b6 = L.marker(
+                [45.1, 15.2],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_6803207d978915544854d899201dcbb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81a2e98372845af3a5fa1357aeb4a9b6.setIcon(icon_6803207d978915544854d899201dcbb1);
+        
+    
+            marker_81a2e98372845af3a5fa1357aeb4a9b6.bindTooltip(
+                `<div>
+                     Croatia: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_739869ec86fb2696f2fe243e0bf44cca = L.marker(
+                [35.126413, 33.429859],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_04b8d762920afc99f0e2f3edb2cd7004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_739869ec86fb2696f2fe243e0bf44cca.setIcon(icon_04b8d762920afc99f0e2f3edb2cd7004);
+        
+    
+            marker_739869ec86fb2696f2fe243e0bf44cca.bindTooltip(
+                `<div>
+                     Cyprus: Both used
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd7746b4262d6db9f4fee013b51b5a3e = L.marker(
+                [49.817492, 15.472962],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_75779a4d00dc1ffa5b9999cf87344c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd7746b4262d6db9f4fee013b51b5a3e.setIcon(icon_75779a4d00dc1ffa5b9999cf87344c0b);
+        
+    
+            marker_bd7746b4262d6db9f4fee013b51b5a3e.bindTooltip(
+                `<div>
+                     Czech Republic: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3fae46edabb75035626d8d954f1e965 = L.marker(
+                [56.26392, 9.501785],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_bcbbcd17ffe22c2876f3a4d7e5db76fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3fae46edabb75035626d8d954f1e965.setIcon(icon_bcbbcd17ffe22c2876f3a4d7e5db76fb);
+        
+    
+            marker_e3fae46edabb75035626d8d954f1e965.bindTooltip(
+                `<div>
+                     Denmark: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5787a61b9f6bb1752c2b060df7aa7165 = L.marker(
+                [52.132633, 5.291266],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_1f529b1d7a853fc58ca46f898ab3bede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5787a61b9f6bb1752c2b060df7aa7165.setIcon(icon_1f529b1d7a853fc58ca46f898ab3bede);
+        
+    
+            marker_5787a61b9f6bb1752c2b060df7aa7165.bindTooltip(
+                `<div>
+                     Netherlands: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cd35295de84e66581dd46ef6b84d61e = L.marker(
+                [55.378051, -3.435973],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_85d484a47e52ec8dc6ba0204b7217751 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4cd35295de84e66581dd46ef6b84d61e.setIcon(icon_85d484a47e52ec8dc6ba0204b7217751);
+        
+    
+            marker_4cd35295de84e66581dd46ef6b84d61e.bindTooltip(
+                `<div>
+                     United Kingdom: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2dd86d1ca334bd670d44f7077ca8385 = L.marker(
+                [58.595272, 25.013607],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_981e3b1de541aa4140bda906c082357c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2dd86d1ca334bd670d44f7077ca8385.setIcon(icon_981e3b1de541aa4140bda906c082357c);
+        
+    
+            marker_d2dd86d1ca334bd670d44f7077ca8385.bindTooltip(
+                `<div>
+                     Estonia: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4e5a9d2e2e93bbd7125c85528565fde = L.marker(
+                [61.92411, 25.748151],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_3c585c8ab8fb33faa6fc16aaa9f0744e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4e5a9d2e2e93bbd7125c85528565fde.setIcon(icon_3c585c8ab8fb33faa6fc16aaa9f0744e);
+        
+    
+            marker_a4e5a9d2e2e93bbd7125c85528565fde.bindTooltip(
+                `<div>
+                     Finland: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_650891a8cf8e3903abb6d89158b2f173 = L.marker(
+                [46.227638, 2.213749],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_c0ecbd6a02580ee721ae612a58d77b91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_650891a8cf8e3903abb6d89158b2f173.setIcon(icon_c0ecbd6a02580ee721ae612a58d77b91);
+        
+    
+            marker_650891a8cf8e3903abb6d89158b2f173.bindTooltip(
+                `<div>
+                     France: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6ec51fafe293ba956bcf83768fb7edf = L.marker(
+                [51.165691, 10.451526],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_12be7d9fc61759664651d9dfab3d11df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6ec51fafe293ba956bcf83768fb7edf.setIcon(icon_12be7d9fc61759664651d9dfab3d11df);
+        
+    
+            marker_a6ec51fafe293ba956bcf83768fb7edf.bindTooltip(
+                `<div>
+                     Germany: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f8da2a6dea6e3aa63e8deaa5857b439 = L.marker(
+                [39.074208, 21.824312],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_362ef6abdf1a2912f0408a3b09327e4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3f8da2a6dea6e3aa63e8deaa5857b439.setIcon(icon_362ef6abdf1a2912f0408a3b09327e4a);
+        
+    
+            marker_3f8da2a6dea6e3aa63e8deaa5857b439.bindTooltip(
+                `<div>
+                     Greece: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72d64807a0b33a905e6a446fbc41213f = L.marker(
+                [47.162494, 19.503304],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_537b9f7dbf1ab4264b27a10e210cc046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72d64807a0b33a905e6a446fbc41213f.setIcon(icon_537b9f7dbf1ab4264b27a10e210cc046);
+        
+    
+            marker_72d64807a0b33a905e6a446fbc41213f.bindTooltip(
+                `<div>
+                     Hungary: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7d3e0a4f371f63cbeb1912775c3b0ae = L.marker(
+                [64.963051, -19.020835],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_f44e906e991da8d03981bc9745728d09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7d3e0a4f371f63cbeb1912775c3b0ae.setIcon(icon_f44e906e991da8d03981bc9745728d09);
+        
+    
+            marker_f7d3e0a4f371f63cbeb1912775c3b0ae.bindTooltip(
+                `<div>
+                     Iceland: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7fb62f778c5c4e0d3584944134b3e70 = L.marker(
+                [53.41291, -8.24389],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_87d9ab8a58eda094689ce18fd394eccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7fb62f778c5c4e0d3584944134b3e70.setIcon(icon_87d9ab8a58eda094689ce18fd394eccc);
+        
+    
+            marker_a7fb62f778c5c4e0d3584944134b3e70.bindTooltip(
+                `<div>
+                     Ireland: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ad37881bb7d1f60e480632df3ed8872 = L.marker(
+                [41.87194, 12.56738],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_5474d325774cd1119942884d53fa0c32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ad37881bb7d1f60e480632df3ed8872.setIcon(icon_5474d325774cd1119942884d53fa0c32);
+        
+    
+            marker_4ad37881bb7d1f60e480632df3ed8872.bindTooltip(
+                `<div>
+                     Italy: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95e6d20a73b74394a5ba368bb7bad6b9 = L.marker(
+                [42.602636, 20.902977],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_6ba3bad48ae5abc795e1b05c9942df31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_95e6d20a73b74394a5ba368bb7bad6b9.setIcon(icon_6ba3bad48ae5abc795e1b05c9942df31);
+        
+    
+            marker_95e6d20a73b74394a5ba368bb7bad6b9.bindTooltip(
+                `<div>
+                     Kosovo: Both used
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d65196ed9a10cec7669134835701828a = L.marker(
+                [56.879635, 24.603189],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_95a88dbd281c3c9165fab85bf41325ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d65196ed9a10cec7669134835701828a.setIcon(icon_95a88dbd281c3c9165fab85bf41325ba);
+        
+    
+            marker_d65196ed9a10cec7669134835701828a.bindTooltip(
+                `<div>
+                     Latvia: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_344c35883ad454b465c1442710f934d7 = L.marker(
+                [47.166, 9.555373],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_bdaf8311370dc406695a5606b4d923f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_344c35883ad454b465c1442710f934d7.setIcon(icon_bdaf8311370dc406695a5606b4d923f4);
+        
+    
+            marker_344c35883ad454b465c1442710f934d7.bindTooltip(
+                `<div>
+                     Liechtenstein: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_272ffa2642a3da187f163c9c6986dbc2 = L.marker(
+                [55.169438, 23.881275],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_9dfd1f1fa1cd28ec75b7b016c5764d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_272ffa2642a3da187f163c9c6986dbc2.setIcon(icon_9dfd1f1fa1cd28ec75b7b016c5764d3d);
+        
+    
+            marker_272ffa2642a3da187f163c9c6986dbc2.bindTooltip(
+                `<div>
+                     Lithuania: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d077d8e80d60f62565720b77a30a0d6 = L.marker(
+                [49.815273, 6.129583],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_51dca913fce5009d2dca911b37b78d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d077d8e80d60f62565720b77a30a0d6.setIcon(icon_51dca913fce5009d2dca911b37b78d0f);
+        
+    
+            marker_9d077d8e80d60f62565720b77a30a0d6.bindTooltip(
+                `<div>
+                     Luxembourg: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_081fe0f60be562671aa4a0e6f4f8697e = L.marker(
+                [41.608635, 21.745275],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_01faae8cd316ed8e86bc29ab9139c3c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_081fe0f60be562671aa4a0e6f4f8697e.setIcon(icon_01faae8cd316ed8e86bc29ab9139c3c1);
+        
+    
+            marker_081fe0f60be562671aa4a0e6f4f8697e.bindTooltip(
+                `<div>
+                     North Macedonia: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a9507db7f0893300e8a9f476cf2e322 = L.marker(
+                [35.937496, 14.375416],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_19b1ccf5a9fe5cbe268ee3e9d11c7f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6a9507db7f0893300e8a9f476cf2e322.setIcon(icon_19b1ccf5a9fe5cbe268ee3e9d11c7f25);
+        
+    
+            marker_6a9507db7f0893300e8a9f476cf2e322.bindTooltip(
+                `<div>
+                     Malta: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a4590e6a3673a69b2b7515ff8cbf4b = L.marker(
+                [47.411631, 28.369885],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_2f9d9ebef0aabf04d89e5396439f52c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a8a4590e6a3673a69b2b7515ff8cbf4b.setIcon(icon_2f9d9ebef0aabf04d89e5396439f52c3);
+        
+    
+            marker_a8a4590e6a3673a69b2b7515ff8cbf4b.bindTooltip(
+                `<div>
+                     Moldova: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6355aadd57f96f4167734d06bf22f80 = L.marker(
+                [43.750298, 7.412841],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_f0646d78ac72605492968684a9d981b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6355aadd57f96f4167734d06bf22f80.setIcon(icon_f0646d78ac72605492968684a9d981b9);
+        
+    
+            marker_d6355aadd57f96f4167734d06bf22f80.bindTooltip(
+                `<div>
+                     Monaco: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17401e3a5b29ea39f7497a6af3aea33c = L.marker(
+                [42.708678, 19.37439],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_f51b12cf53418c5587e6f0dce220ca85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_17401e3a5b29ea39f7497a6af3aea33c.setIcon(icon_f51b12cf53418c5587e6f0dce220ca85);
+        
+    
+            marker_17401e3a5b29ea39f7497a6af3aea33c.bindTooltip(
+                `<div>
+                     Montenegro: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_809392ba872f90694e55c4da7e91760a = L.marker(
+                [60.472024, 8.468946],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_d9b63fbe089e194cdff0c9836b2a9520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_809392ba872f90694e55c4da7e91760a.setIcon(icon_d9b63fbe089e194cdff0c9836b2a9520);
+        
+    
+            marker_809392ba872f90694e55c4da7e91760a.bindTooltip(
+                `<div>
+                     Norway: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_517d180c56f49b8285952fcf1513d4dc = L.marker(
+                [45.943161, 24.96676],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_2f607fdeae2112bea3a01e8f03e4ddce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_517d180c56f49b8285952fcf1513d4dc.setIcon(icon_2f607fdeae2112bea3a01e8f03e4ddce);
+        
+    
+            marker_517d180c56f49b8285952fcf1513d4dc.bindTooltip(
+                `<div>
+                     Romania: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb52a7839c7260915b0cc29bb88c1cd5 = L.marker(
+                [51.919438, 19.145136],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_19c5c0d31a62a0ad2907001ab92ff679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eb52a7839c7260915b0cc29bb88c1cd5.setIcon(icon_19c5c0d31a62a0ad2907001ab92ff679);
+        
+    
+            marker_eb52a7839c7260915b0cc29bb88c1cd5.bindTooltip(
+                `<div>
+                     Poland: Both used
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52618963a9f08a08152307c5aa7e8c38 = L.marker(
+                [39.399872, -8.224454],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_8a27fbf2bc4bfedb0e3175f5203f8aaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52618963a9f08a08152307c5aa7e8c38.setIcon(icon_8a27fbf2bc4bfedb0e3175f5203f8aaa);
+        
+    
+            marker_52618963a9f08a08152307c5aa7e8c38.bindTooltip(
+                `<div>
+                     Portugal: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30377f7c327940588f95e91c594bc7df = L.marker(
+                [55.755825, 37.617298],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_877da3f846ec3e9b14f7b9e7e69c85d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_30377f7c327940588f95e91c594bc7df.setIcon(icon_877da3f846ec3e9b14f7b9e7e69c85d7);
+        
+    
+            marker_30377f7c327940588f95e91c594bc7df.bindTooltip(
+                `<div>
+                     Russia: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdddee365e9afb58f37375759927eea5 = L.marker(
+                [43.94236, 12.457777],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_70fbc1242c5a490ae25c65840615ca78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fdddee365e9afb58f37375759927eea5.setIcon(icon_70fbc1242c5a490ae25c65840615ca78);
+        
+    
+            marker_fdddee365e9afb58f37375759927eea5.bindTooltip(
+                `<div>
+                     San Marino: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46e697039bcca17c037af18d1c264e05 = L.marker(
+                [44.016521, 21.005859],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_29f56139a7902988613639dd2f7b5b0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_46e697039bcca17c037af18d1c264e05.setIcon(icon_29f56139a7902988613639dd2f7b5b0d);
+        
+    
+            marker_46e697039bcca17c037af18d1c264e05.bindTooltip(
+                `<div>
+                     Serbia: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_394baadd3c1d815cb889b6d9ab0a5df6 = L.marker(
+                [48.669026, 19.699024],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_061eb400b993f892f7796cb7522359cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_394baadd3c1d815cb889b6d9ab0a5df6.setIcon(icon_061eb400b993f892f7796cb7522359cf);
+        
+    
+            marker_394baadd3c1d815cb889b6d9ab0a5df6.bindTooltip(
+                `<div>
+                     Slovakia: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b4f1875286159112c55b6205a7bc88c = L.marker(
+                [46.151241, 14.995463],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_12136c2f9e3cad0d194c713d276c86ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1b4f1875286159112c55b6205a7bc88c.setIcon(icon_12136c2f9e3cad0d194c713d276c86ea);
+        
+    
+            marker_1b4f1875286159112c55b6205a7bc88c.bindTooltip(
+                `<div>
+                     Slovenia: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ae8b4f7b7f60eb9c815d40d2e044cb8 = L.marker(
+                [40.463667, -3.74922],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_de175f5f0aa6956d88147c4e3489e867 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ae8b4f7b7f60eb9c815d40d2e044cb8.setIcon(icon_de175f5f0aa6956d88147c4e3489e867);
+        
+    
+            marker_7ae8b4f7b7f60eb9c815d40d2e044cb8.bindTooltip(
+                `<div>
+                     Spain: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_098922a966b5e63dd02f60f0bf3fe965 = L.marker(
+                [60.128161, 18.643501],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_e76250da0e0a6618086f8145c50aa195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_098922a966b5e63dd02f60f0bf3fe965.setIcon(icon_e76250da0e0a6618086f8145c50aa195);
+        
+    
+            marker_098922a966b5e63dd02f60f0bf3fe965.bindTooltip(
+                `<div>
+                     Sweden: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67494ce5e24dde49161a064fe370f81c = L.marker(
+                [46.818188, 8.227512],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_d0852c25d439cc2ea29ca51b167ad9fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67494ce5e24dde49161a064fe370f81c.setIcon(icon_d0852c25d439cc2ea29ca51b167ad9fe);
+        
+    
+            marker_67494ce5e24dde49161a064fe370f81c.bindTooltip(
+                `<div>
+                     Switzerland: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d830b390107be4a043713fa0eabbd4eb = L.marker(
+                [38.963745, 35.243322],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_cd230ad6dd1600a56e7c31ff70961d59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d830b390107be4a043713fa0eabbd4eb.setIcon(icon_cd230ad6dd1600a56e7c31ff70961d59);
+        
+    
+            marker_d830b390107be4a043713fa0eabbd4eb.bindTooltip(
+                `<div>
+                     Turkey: Reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3765d8090e1b17302ea141600d3222a = L.marker(
+                [48.379433, 31.16558],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_86c6c6ab9905fa2bf6588ea179b53bff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a3765d8090e1b17302ea141600d3222a.setIcon(icon_86c6c6ab9905fa2bf6588ea179b53bff);
+        
+    
+            marker_a3765d8090e1b17302ea141600d3222a.bindTooltip(
+                `<div>
+                     Ukraine: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_009b48b803cc1284df4994cf782e80f0 = L.marker(
+                [41.902916, 12.453389],
+                {}
+            ).addTo(map_331022e7f53a68fa3927d5eb28afd04c);
+        
+    
+            var icon_7a3fe2ccd72f9f5b8b39d4b89df99fe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_009b48b803cc1284df4994cf782e80f0.setIcon(icon_7a3fe2ccd72f9f5b8b39d4b89df99fe1);
+        
+    
+            marker_009b48b803cc1284df4994cf782e80f0.bindTooltip(
+                `<div>
+                     Vatican City: Not a reference to the name of Christ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
